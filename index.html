@@ -190,15 +190,15 @@
         <div class="container">
           <div class="row">
             <div class="col-md-4 text-center stat-box">
-              <h1 class="purple count">3.2k</h1>
+              <h1 class="purple"><span class="counter">3.2</span>k</h1>
               <h3>Hours</h3>
             </div>
             <div class="col-md-4 text-center stat-box">
-              <h1 class="blue count">217</h1>
+              <h1 class="blue counter">217</h1>
               <h3>Projects</h3>
             </div>
             <div class="col-md-4 text-center stat-box">
-              <h1 class="pink">18.3k</h1>
+              <h1 class="pink"><span class="counter">18.3</span>k</h1>
               <h3>Cups of Coffee</h3>
             </div>
           </div>
@@ -265,6 +265,11 @@
         grabCursor: true,
         freeMode: true
       });
+      </script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+      <script src="js/jquery.counterup.min.js"></script>
+      <script>
+      $('.counter').counterUp();
       </script>
       <!-- Google Analytics: You can remove this code -->
       <script>
