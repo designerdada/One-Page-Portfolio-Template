@@ -359,14 +359,19 @@ h1.heading.pink:after {
 
 
 
-#menu-toggle {
+nav {
   height: 40px;
-  width: 40px;
+  width: 100%;
   position: absolute;
   right: 0;
   top: 3em;
   cursor: pointer;
   transition: .25s ease-in-out;
+}
+#menu-toggle {
+  width: 40px;
+  clear: both;
+  float: right;
 }
 /*#menu-toggle:hover {
   transform: translateX(5px);
@@ -410,9 +415,6 @@ h1.heading.pink:after {
   transition-delay: .25s;
 }
 
-
-
-
 #menu-toggle.open .hamburger span.line {
   width: 0px;
 }
@@ -435,7 +437,32 @@ h1.heading.pink:after {
   transition-delay: 1.25s;
 }
 
-
+ul.main-nav {
+  padding-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  opacity: 0;
+  visibility: hidden;
+  transition: .25s all;
+}
+ul.main-nav li {
+  display: inline-block;
+}
+ul.main-nav li a {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 5px 15px;
+}
+ul.main-nav li a:hover {
+  color: #ffbe61;
+}
+ul.main-nav.show-it {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: .25s;
+}
 
 
 

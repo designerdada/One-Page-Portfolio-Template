@@ -29,17 +29,25 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-md-offset-6">
-              <div id="menu-toggle">
-                <div class="hamburger">
-                  <span class="line"></span>
-                  <span class="line"></span>
-                  <span class="line"></span>
+              <nav>
+                <div id="menu-toggle">
+                  <div class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                  </div>
+                  <div class="cross">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                  </div>
                 </div>
-                <div class="cross">
-                  <span class="line"></span>
-                  <span class="line"></span>
-                </div>
-              </div>
+                <ul class="main-nav">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
               <!-- <a href="#" class="menu"><img src="assets/menu.png"></a> -->
               <div class="hero-text">
                 <h1><span>Hi, I am</span><br>Maria Ferrero.</h1>
@@ -285,7 +293,8 @@
       });
 
       $('#menu-toggle').click(function(){
-        $(this).toggleClass('open');
+        $(this).toggleClass('open'),
+        $('.main-nav').toggleClass('show-it');
       })
       </script>
     </body>
