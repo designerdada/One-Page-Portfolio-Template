@@ -29,7 +29,18 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-md-offset-6">
-              <a href="#" class="menu"><img src="assets/menu.png"></a>
+              <div id="menu-toggle">
+                <div class="hamburger">
+                  <span class="line"></span>
+                  <span class="line"></span>
+                  <span class="line"></span>
+                </div>
+                <div class="cross">
+                  <span class="line"></span>
+                  <span class="line"></span>
+                </div>
+              </div>
+              <!-- <a href="#" class="menu"><img src="assets/menu.png"></a> -->
               <div class="hero-text">
                 <h1><span>Hi, I am</span><br>Maria Ferrero.</h1>
                 <h3>Freelance designer from Melbourne</h3>
@@ -52,7 +63,7 @@
           <div class="row">
             <div class="col-md-12">
               <h4 class="sub-heading">Exclusively</h4>
-              <h1 class="heading"><span class="purple">works</span> with <br>Startups and founders</h1>
+              <h1 class="heading purple"><span class="purple">works</span> with <br>Startups and founders</h1>
               <!-- Swiper -->
               <div class="swiper-container client-swiper">
                 <div class="swiper-wrapper">
@@ -102,7 +113,7 @@
           <div class="row">
             <div class="col-md-12">
               <h4 class="sub-heading">Happy</h4>
-              <h1 class="heading"><span class="pink">Client's</span> <br>testimonials</h1>
+              <h1 class="heading pink"><span class="pink">Client's</span> hello <br>testimonials</h1>
             </div>
           </div>  
         </div>
@@ -233,7 +244,7 @@
           </div>
           <div class="row sub-footer">
             <div class="col-md-12 text-center">
-              <p>Designed by <a href="#" target="_blank">@realvjy</a></p>
+              <p>Designed by <a href="#" target="_blank">@realvjy</a> | Download <a href="#" target="_blank">here</a></p>
             </div>
           </div>
         </div>
@@ -269,7 +280,13 @@
       <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
       <script src="js/jquery.counterup.min.js"></script>
       <script>
-      $('.counter').counterUp();
+      $('.counter').counterUp({
+        time: 1000
+      });
+
+      $('#menu-toggle').click(function(){
+  $(this).toggleClass('open');
+})
       </script>
       <!-- Google Analytics: You can remove this code -->
       <script>
