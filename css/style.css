@@ -55,8 +55,6 @@ header.hero {
 }
 
 header.hero .hero-text {
-  /*transform: translateY(15%);
-  -webkit-transform: translateY(15%);*/
   margin-top: 20%;
   margin-bottom: 20%;
 }
@@ -349,20 +347,7 @@ h1.heading.pink:after {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Main navigation */
 nav {
   height: 40px;
   width: 100%;
@@ -477,6 +462,7 @@ ul.main-nav.show-it {
 
 
 
+/* Let's optimise it for mobile devices */
 
 @media (max-width: 720px){
   .btn-lg {
