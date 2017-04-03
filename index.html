@@ -25,10 +25,10 @@
       <![endif]-->
     </head>
     <body>
-      <header id="hero-content" class="hero">
+      <header class="hero">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 col-md-offset-6">
+            <div class="col-md-6 col-md-offset-6 col-xs-12">
               <nav>
                 <div id="menu-toggle">
                   <div class="hamburger">
@@ -262,8 +262,8 @@
       <script src="js/jquery-2.1.1.js"></script>
       <script src="js/custom.js"></script>
       <script>
-      initHeader();
-      addListeners();
+      // initHeader();
+      // addListeners();
       </script>
       <script src="js/swiper.jquery.min.js"></script>
       <!-- Initialize Client Swiper -->
@@ -273,8 +273,27 @@
         paginationClickable: true,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
-        spaceBetween: 60
-      });
+        spaceBetween: 60,
+        // Responsive breakpoints
+        breakpoints: {
+    // when window width is <= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: '.swiper-pagination'
+    },
+    // when window width is <= 480px
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is <= 640px
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    }
+  }
+});
       // Initialize Testimonial Swiper
       var swiper2 = new Swiper('.testimonial-swiper', {
         slidesPerView: 3,
@@ -282,7 +301,24 @@
         paginationClickable: true,
         spaceBetween: 30,
         grabCursor: true,
-        freeMode: true
+        freeMode: true,
+        breakpoints: {
+    // when window width is <= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    // when window width is <= 480px
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    // when window width is <= 640px
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    }
+  }
       });
       </script>
       <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
