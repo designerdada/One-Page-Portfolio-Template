@@ -492,6 +492,9 @@ ul.main-nav.show-it {
   ul.social-links li a {
     opacity: 1;
   }
+  .testimonial {
+    padding-top: 3rem;
+  }
   .case-study .col-md-12 {
     padding-left: 15px;
     padding-right: 15px;
@@ -500,6 +503,7 @@ ul.main-nav.show-it {
     transform: translateY(0px);
     -webkit-transform: translateY(0px);
   }
+
   /*Swiper classes*/
   .client-box.swiper-slide-next {
     -ms-transform: scale(1);
